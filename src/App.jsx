@@ -1,10 +1,9 @@
+import Input from "./components/Input";
+
 const App = () => {
   return (
     <div className="main">
-      <div className="input-wrapper">
-        <input type="text" placeholder="Search places" />
-        <span className="shortcut">Ctrl + /</span>
-      </div>
+      <Input />
     </div>
   );
 };
