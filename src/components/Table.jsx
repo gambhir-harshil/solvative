@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Spinner from "./Spiner";
 
 const Table = ({ loading, data, error }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -33,7 +34,9 @@ const Table = ({ loading, data, error }) => {
         <tbody>
           {loading && (
             <tr>
-              <td colSpan={3}>Loading...</td>
+              <td colSpan={3}>
+                <Spinner />
+              </td>
             </tr>
           )}
           {error && (
